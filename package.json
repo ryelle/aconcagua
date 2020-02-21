@@ -11,7 +11,7 @@
     "stylelint": "^13.2.0"
   },
   "scripts": {
-    "start": "postcss css/style.css -o style.css -m",
+    "start": "postcss css/style.css -o style.css -mw",
     "build": "postcss css/style.css -o style.css --no-map --env=production"
   },
   "author": "Mel & Kelly Choyce-Dwan",

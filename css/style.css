@@ -12,3 +12,65 @@
  * This theme, like WordPress, is licensed under the GPL.
  * Use it to make something cool, have fun, and share what you've learned with others.
  */
+
+@import './normalize.css';
+
+@font-face {
+	font-family: 'Bluu Next';
+	src: url('assets/bluunext-bold-webfont.woff2') format('woff2'),
+	     url('assets/bluunext-bold-webfont.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+:root {
+	--color-grey: #73859B;
+	--color-black: #2C3642;
+}
+
+body {
+	font-family: Arimo;
+	font-size: 1.375rem;
+	line-height: 1.45;
+	color: var(--color-black);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0.8em 0 0.4em;
+	font-weight: bold;
+}
+
+h1, h2 {
+	font-family: 'Bluu Next';
+	font-size: 3rem;
+	line-height: 1.45;
+}
+
+h2 {
+	font-style: italic;
+	font-size: 2.25rem;
+	line-height: 1.2;
+}
+
+.site-header h1 {
+	font-family: Arimo;
+	font-size: 1.75rem;
+	color: var(--color-grey);
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+h3, h4, h5, h6 {
+	font-family: Arimo;
+	font-size: 1.75rem;
+	line-height: 1.14;
+}
+
+h4, h5, h6 {
+	font-size: 1.125rem;
+	font-weight: normal;
+	letter-spacing: 0.16667em;
+	text-transform: uppercase;
+	color: var(--color-grey);
+}
+

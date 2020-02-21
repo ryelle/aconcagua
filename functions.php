@@ -34,7 +34,17 @@ add_action( 'after_setup_theme', __NAMESPACE__ . '\theme_support' );
  */
 function register_styles() {
 	$version = filemtime( __DIR__ . '/style.css' );
-	wp_enqueue_style( 'aconcagua-style', get_stylesheet_uri(), array(), $version );
+
+	$font_families[] = 'Arimo:400,400i,700';
+	$query_args = array(
+		'family' => urlencode( implode( '|', $font_families ) ),
+		'subset' => urlencode( 'latin,latin-ext' ),
+		'display' => 'swap',
+	);
+	$fonts_url = add_query_arg( $query_args, 'https://fonts.googleapis.com/css' );
+
+	wp_enqueue_style( 'aconcagua-font', esc_url_raw( $fonts_url ), array(), 1 );
+	wp_enqueue_style( 'aconcagua-style', get_stylesheet_uri(), array( 'aconcagua-font' ), $version );
 }
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\register_styles' );
 
