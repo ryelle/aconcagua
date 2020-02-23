@@ -1,0 +1,26 @@
+.site-footer {
+	margin-bottom: 100px;
+	padding: 80px 118px;
+	background: var(--color-black);
+	color: #fff;
+}
+
+.site-footer h2 {
+	margin-bottom: 3rem;
+	font-family: Arimo, sans-serif;
+	font-weight: normal;
+	font-size: 1.125rem;
+	line-height: 1.1666667;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+.site-footer .wp-block-columns {
+	display: grid;
+	grid-template-columns: 2fr 2fr 3fr;
+	grid-gap: 118px;
+}
+
+.site-footer .wp-block-column {
+	margin-left: 0;
+}
