@@ -1,4 +1,4 @@
 .has-drop-cap:not(:focus)::first-letter {
-	font-weight: 700;
+	font-weight: bold;
 	font-size: 3.2em;
 }

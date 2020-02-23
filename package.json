@@ -16,7 +16,11 @@
     "extends @wordpress/browserslist-config"
   ],
   "stylelint": {
-    "extends": "stylelint-config-wordpress/scss"
+    "extends": "stylelint-config-wordpress/scss",
+    "rules": {
+      "font-weight-notation": "named-where-possible",
+      "max-line-length": [ 115, { "ignore": ["comments"] } ]
+    }
   },
   "scripts": {
     "start": "postcss css/style.css -o style.css -mw",

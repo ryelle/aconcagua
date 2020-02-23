@@ -1,16 +1,17 @@
 
 @font-face {
-	font-family: 'Bluu Next';
-	src: url('assets/bluunext-bold-webfont.woff2') format('woff2'),
-	     url('assets/bluunext-bold-webfont.woff') format('woff');
+	font-family: "Bluu Next";
+	src:
+		url(assets/bluunext-bold-webfont.woff2) format("woff2"),
+		url(assets/bluunext-bold-webfont.woff) format("woff");
 	font-weight: bold;
 	font-style: normal;
 }
 
 :root {
-	--color-grey: #73859B;
-	--color-black: #2C3642;
-	
+	--color-grey: #73859b;
+	--color-black: #2c3642;
+
 	--width-site: 1282px;
 	--width-post: 926px;
 }

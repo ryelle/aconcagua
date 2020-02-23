@@ -1,5 +1,5 @@
 body {
-	background: white;
+	background: #fff;
 }
 
 body,
@@ -9,7 +9,7 @@ select,
 optgroup,
 textarea {
 	color: var(--color-black);
-	font-family: Arimo;
+	font-family: Arimo, sans-serif;
 	font-size: 1.375rem;
 	line-height: 1.45;
 }
@@ -42,7 +42,7 @@ li > ol {
 }
 
 dt {
-	font-weight: 700;
+	font-weight: bold;
 }
 
 dd {

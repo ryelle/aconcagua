@@ -10,10 +10,12 @@
 	margin: -1px;
 	padding: 0;
 	overflow: hidden;
-	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
 	border: 0;
 	clip: rect(1px, 1px, 1px, 1px);
 	clip-path: inset(50%);
+
+	/* Many screen reader and browser combinations announce broken words as they would appear visually. */
+	word-wrap: normal !important;
 }
 
 .screen-reader-text:focus {
@@ -25,7 +27,7 @@
 	height: auto;
 	padding: 15px 23px 14px;
 	color: #21759b;
-	font-weight: 700;
+	font-weight: bold;
 	font-size: 14px;
 	font-size: 0.875rem;
 	line-height: normal;
