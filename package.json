@@ -23,7 +23,7 @@
     }
   },
   "scripts": {
-    "start": "postcss css/style.css -o style.css -mw",
+    "start": "concurrently \"postcss css/style.css -o style.css -mw\" \"livereload style.css\"",
     "dev": "postcss css/style.css -o style.css -m",
     "build": "postcss css/style.css -o style.css --no-map --env=production",
     "lint": "stylelint css"
