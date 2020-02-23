@@ -1,0 +1,40 @@
+.wp-block-latest-posts li {
+	display: flex;
+	position: relative;
+	overflow: hidden;
+	align-items: stretch;
+	background: var(--color-light-grey);
+}
+
+.wp-block-latest-posts .wp-block-latest-posts__featured-image {
+	align-self: center;
+}
+
+.wp-block-latest-posts li a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute 0;
+	padding: 4rem 2rem 2rem;
+	font-weight: bold;
+	font-size: 2rem;
+	line-height: 1.15625;
+	text-align: center;
+	text-decoration: none;
+	color: var(--color-black);
+	opacity: 0;
+	transition: all 0.2s;
+}
+
+.wp-block-latest-posts li:hover img,
+.wp-block-latest-posts li:focus-within img {
+	filter: grayscale(80%);
+}
+
+.wp-block-latest-posts li a:hover,
+.wp-block-latest-posts li a:focus {
+	opacity: 1;
+	padding-top: 2rem;
+	background: rgba(229, 232, 237, 0.9);
+	box-shadow: inset 2px 2px 0 var(--color-black), inset -2px -2px 0 var(--color-black);
+}

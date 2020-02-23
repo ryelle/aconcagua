@@ -1,3 +1,5 @@
+@import "./latest-posts.css";
+
 .entry-content > * {
 	margin: * auto 1em;
 	max-width: var(--width-post);
