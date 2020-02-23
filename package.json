@@ -3,16 +3,26 @@
   "version": "1.0.0",
   "private": true,
   "devDependencies": {
+    "@wordpress/browserslist-config": "^2.6.0",
     "autoprefixer": "^9.7.4",
     "postcss-cli": "^7.1.0",
-    "postcss-custom-properties": "^9.0.2",
     "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.7.0",
     "postcss-short": "^5.0.0",
-    "stylelint": "^13.2.0"
+    "stylelint": "^13.2.0",
+    "stylelint-config-wordpress": "^16.0.0"
+  },
+  "browserslist": [
+    "extends @wordpress/browserslist-config"
+  ],
+  "stylelint": {
+    "extends": "stylelint-config-wordpress/scss"
   },
   "scripts": {
     "start": "postcss css/style.css -o style.css -mw",
-    "build": "postcss css/style.css -o style.css --no-map --env=production"
+    "dev": "postcss css/style.css -o style.css -m",
+    "build": "postcss css/style.css -o style.css --no-map --env=production",
+    "lint": "stylelint css"
   },
   "author": "Mel & Kelly Choyce-Dwan",
   "license": "GPL-2.0-or-later"

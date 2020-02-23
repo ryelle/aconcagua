@@ -1,8 +1,8 @@
 module.exports = ( { env } ) => ( {
 	map: 'production' !== env,
 	plugins: [
-		require('postcss-short'),
-		require('postcss-import'),
-		require('postcss-custom-properties')
+		require('postcss-import')(),
+		require('postcss-short')(),
+		require('postcss-preset-env')(),
 	]
 } );
