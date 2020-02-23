@@ -17,31 +17,22 @@
 	margin-left: auto;
 }
 
-@media (min-width: var(--width-post)) {
-	.alignwide {
-		max-width: 100vw;
-		margin-right: calc(-100vw / 2 + 100% / 2);
-		margin-left: calc(-100vw / 2 + 100% / 2);
-	}
+@media (width > 926px) {
 
+	.alignwide,
 	.alignfull {
-		max-width: 100vw;
-		margin-right: calc(-100vw / 2 + 100% / 2);
-		margin-left: calc(-100vw / 2 + 100% / 2);
+		max-width: 100%;
+		margin: * auto;
 	}
 }
 
-@media (min-width: var(--width-site)) {
-	.alignwide {
-		max-width: var(--width-site);
-		margin-right: -1 * (var(--width-site) - var(--width-post))/2;
-		margin-left: -1 * (var(--width-site) - var(--width-post))/2;
-	}
+@media (width > 1282px) {
 
 	.alignfull {
 		max-width: 100vw;
-		margin-right: calc(-100vw / 2 + 100% / 2);
-		margin-left: calc(-100vw / 2 + 100% / 2);
+		width: 100vw;
+		margin-left: calc(-100vw + 100%);
+		margin-right: 0;
 	}
 }
 
