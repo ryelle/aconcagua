@@ -1,0 +1,121 @@
+body {
+	background: white;
+}
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: var(--color-black);
+	font-family: Arimo;
+	font-size: 1.375rem;
+	line-height: 1.45;
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+dfn,
+em,
+i {
+	font-style: italic;
+}
+
+address {
+	margin: 0 0 1em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+}
+
+dt {
+	font-weight: 700;
+}
+
+dd {
+	margin: 0 1em 1em;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+figure {
+	margin: 1em 0;
+}
+
+figcaption {
+	color: var(--color-grey);
+	font-size: 0.875rem;
+	text-align: left;
+}
+
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+table {
+	width: 100%;
+	margin: 0 0 1em;
+}
+
+th,
+td {
+	padding: 0.5em 0;
+}
+
+thead th,
+thead td,
+tfoot th,
+tfoot td {
+	color: var(--color-grey);
+	font-size: 0.875rem;
+	text-align: left;
+}
+
+pre {
+	max-width: 100%;
+	margin-bottom: 1em;
+	padding: 1em;
+	overflow: auto;
+	background: red;
+}
+
+code,
+kbd,
+tt,
+var {
+	background: red;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted var(--color-grey);
+	cursor: help;
+}
+
+mark,
+ins {
+	text-decoration: none;
+	background: #fff9c0;
+}
+
+big {
+	font-size: 125%;
+}
