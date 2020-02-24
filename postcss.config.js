@@ -3,6 +3,6 @@ module.exports = ( { env } ) => ( {
 	plugins: [
 		require('postcss-import')(),
 		require('postcss-short')(),
-		require('postcss-preset-env')(),
+		require('postcss-preset-env')( { stage: 1 } ),
 	]
 } );
