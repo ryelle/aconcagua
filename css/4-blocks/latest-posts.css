@@ -32,7 +32,7 @@
 		& a {
 			margin-bottom: 0.5em;
 			font-weight: bold;
-			font-size: 2rem;
+			font-size: calc(1rem + var(--type-scale));
 			line-height: 1.15625;
 			text-decoration: none;
 			color: var(--color-black);
