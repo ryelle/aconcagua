@@ -1,6 +1,7 @@
 <?php
 
 namespace Aconcagua_Theme;
+use WP_Block_Type_Registry;
 
 /**
  * Set up theme supports.
@@ -59,3 +60,28 @@ function block_editor_settings() {
 	// Update ^ colors when we have them.
 }
 add_action( 'after_setup_theme', __NAMESPACE__ . '\block_editor_settings' );
+
+/**
+ * Filters the content of a single block.
+ *
+ * @since 5.0.0
+ *
+ * @param string $block_content The block content about to be appended.
+ * @param array  $block         The full block, including name and attributes.
+ */
+function render_block_tweaks( $block_content, $block ) {
+	if ( 'core/latest-posts' === $block['blockName'] ) {
+		$replacements = array(
+			'/></div>' => '/></div><div class="wp-block-latest-posts__content">',
+			'<li><a' => '<li><div class="wp-block-latest-posts__content"><a',
+			'</li>' => '</div></li>',
+		);
+		$block_content = str_replace(
+			array_keys( $replacements ),
+			array_values( $replacements ),
+			$block_content
+		);
+	}
+	return $block_content;
+}
+add_filter( 'render_block', __NAMESPACE__ . '\render_block_tweaks', 10, 2 );
