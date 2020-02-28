@@ -1,6 +1,6 @@
 .site-footer {
-	margin-bottom: 100px;
-	padding: 80px 118px;
+	margin: 6.5rem * 6.5rem;
+	padding: 5rem 7.375rem;
 	background: var(--color-black);
 	color: #fff;
 }
@@ -18,9 +18,22 @@
 .site-footer .wp-block-columns {
 	display: grid;
 	grid-template-columns: 2fr 2fr 3fr;
-	grid-gap: 118px;
+	grid-gap: 7.375rem;
+	margin-bottom: 0;
 }
 
 .site-footer .wp-block-column {
 	margin-left: 0;
+}
+
+.site-footer .wp-block-navigation ul {
+	display: block;
+}
+
+.site-footer .wp-block-navigation .wp-block-navigation-link {
+	display: block;
+}
+
+.site-footer .wp-block-navigation-link .wp-block-navigation-link__content {
+	color: #fff;
 }

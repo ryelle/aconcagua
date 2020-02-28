@@ -1,7 +1,21 @@
+.site-header {
+	padding: 3.5rem 7.375rem 0 0;
+}
+
 .site-header h1 {
+	margin-bottom: 0;
 	font-family: Arimo, sans-serif;
 	font-size: 1.75rem;
 	color: var(--color-grey);
 	letter-spacing: 1px;
 	text-transform: uppercase;
+}
+
+.primary-navigation {
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+.primary-navigation a {
+	text-decoration: none;
 }

@@ -1,0 +1,18 @@
+a {
+	color: var(--color-grey);
+}
+
+a:link,
+a:visited {
+	color: var(--color-grey);
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: var(--color-black);
+}
+
+a:focus {
+	outline: 1px dotted currentColor;
+}
