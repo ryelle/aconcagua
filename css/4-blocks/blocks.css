@@ -1,4 +1,5 @@
 @import "./latest-posts.css";
+@import "./quote.css";
 
 .entry-content > * {
 	margin: * auto 1em;
