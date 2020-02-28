@@ -8,6 +8,15 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: "Bluu Next";
+	src:
+		url(assets/bluunext-bolditalic-webfont.woff2) format("woff2"),
+		url(assets/bluunext-bolditalic-webfont.woff) format("woff");
+	font-weight: bold;
+	font-style: italic;
+}
+
 :root {
 	--color-light-grey: #e5e8ed;
 	--color-grey: #73859b;
