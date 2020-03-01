@@ -19,3 +19,10 @@
 .primary-navigation a {
 	text-decoration: none;
 }
+
+@media (width < 1298px) {
+
+	.site-header {
+		padding-right: 1rem;
+	}
+}
