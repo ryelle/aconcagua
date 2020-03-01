@@ -1,8 +1,6 @@
 .site-footer {
 	margin: 6.5rem * 6.5rem;
 	padding: 5rem 7.375rem;
-	background: var(--color-black);
-	color: #fff;
 }
 
 .site-footer h2 {
@@ -35,7 +33,7 @@
 }
 
 .site-footer .wp-block-navigation-link .wp-block-navigation-link__content {
-	color: #fff;
+	color: inherit;
 }
 
 @media (width < 1298px) {
