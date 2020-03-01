@@ -63,9 +63,28 @@ add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\register_assets' );
  * Add custom colors to the block editor.
  */
 function block_editor_settings() {
-	// add_theme_support( 'editor-color-palette', array() );
+	add_theme_support(
+		'editor-color-palette',
+		array(
+			array(
+				'name'  => esc_html_x( 'Black', 'block color', 'aconcagua' ),
+				'slug'  => 'black',
+				'color' => '#2c3642',
+			),
+			array(
+				'name'  => esc_html_x( 'Grey', 'block color', 'aconcagua' ),
+				'slug'  => 'grey',
+				'color' => '#73859b',
+			),
+			array(
+				'name'  => esc_html_x( 'Light Grey', 'block color', 'aconcagua' ),
+				'slug'  => 'light-grey',
+				'color' => '#e5e8ed',
+			),
+		)
+	);
 	// add_theme_support( '__experimental-editor-gradient-presets', array() );
-	// Update ^ colors when we have them.
+	// Update gradients when we have more colors.
 }
 add_action( 'after_setup_theme', __NAMESPACE__ . '\block_editor_settings' );
 
