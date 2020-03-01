@@ -1,14 +1,9 @@
 .post-container {
-	margin-top: 6rem;
-	justify-content: flex-end;
+	margin: 6rem 7.375rem * auto;
+	max-width: 65.375rem;
+	justify-content: space-between;
 }
 
-.post-container .wp-block-column:first-child {
-	margin-right: 7.375rem;
-	max-width: 44.375rem;
-}
-
-.post-container .wp-block-column:last-child {
-	margin: * 7.375rem * 0;
-	max-width: 13.5625rem;
+.post-container .wp-block-column {
+	margin-left: unset;
 }
