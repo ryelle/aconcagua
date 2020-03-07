@@ -1,6 +1,7 @@
 @import "./latest-posts.css";
 @import "./quote.css";
 @import "./separator.css";
+@import "./pullquote.css";
 
 .entry-content > * {
 	margin: * auto 1em;
