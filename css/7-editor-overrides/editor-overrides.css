@@ -1,1 +1,25 @@
 @import "./latest-posts.css";
+
+/* Gutenberg form content should not use our text styles. */
+button,
+input,
+select,
+optgroup,
+textarea {
+	font-size: initial;
+}
+
+/*--------------------------------------------------------------
+# - Layout
+--------------------------------------------------------------*/
+.wp-block {
+	max-width: 926px;
+}
+
+.wp-block[data-align="wide"] {
+	max-width: 1282px;
+}
+
+.wp-block[data-align="full"] {
+	max-width: none;
+}
