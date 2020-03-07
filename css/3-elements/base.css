@@ -95,14 +95,14 @@ pre {
 	margin-bottom: 1em;
 	padding: 1em;
 	overflow: auto;
-	background: red;
+	background: var(--color-light-grey);
 }
 
 code,
 kbd,
 tt,
 var {
-	background: red;
+	background: var(--color-light-grey);
 }
 
 abbr,
