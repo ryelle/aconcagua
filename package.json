@@ -24,9 +24,10 @@
     }
   },
   "scripts": {
-    "start": "concurrently \"postcss css/style.css -o style.css -mw\" \"livereload style.css\"",
-    "dev": "postcss css/style.css -o style.css -m",
-    "build": "postcss css/style.css -o style.css --no-map --env=production",
+    "start": "concurrently \"postcss css/*.css --dir ./ -mw\" \"livereload . -e css\"",
+    "watch": "postcss css/*.css --dir ./ -mw --verbose",
+    "dev": "postcss css/*.css --dir ./ -m",
+    "build": "postcss css/*.css --dir ./ --no-map --env=production",
     "lint": "stylelint css"
   },
   "author": "Mel & Kelly Choyce-Dwan",
