@@ -85,6 +85,38 @@ function block_editor_settings() {
 	);
 	// add_theme_support( '__experimental-editor-gradient-presets', array() );
 	// Update gradients when we have more colors.
+
+	// Add theme support for font sizes.
+	add_theme_support(
+		'editor-font-sizes',
+		array(
+			array(
+				'name' => esc_html_x( 'Small', 'block font size', 'aconcagua' ),
+				'size' => 18,
+				'slug' => 'small',
+			),
+			array(
+				'name' => esc_html_x( 'Normal', 'block font size', 'aconcagua' ),
+				'size' => 22,
+				'slug' => 'normal',
+			),
+			array(
+				'name' => esc_html_x( 'Medium', 'block font size', 'aconcagua' ),
+				'size' => 28,
+				'slug' => 'medium',
+			),
+			array(
+				'name' => esc_html_x( 'Large', 'block font size', 'aconcagua' ),
+				'size' => 38,
+				'slug' => 'large',
+			),
+			array(
+				'name' => esc_html_x( 'Huge', 'block font size', 'aconcagua' ),
+				'size' => 52,
+				'slug' => 'huge',
+			),
+		)
+	);
 }
 add_action( 'after_setup_theme', __NAMESPACE__ . '\block_editor_settings' );
 
