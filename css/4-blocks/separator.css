@@ -1,0 +1,21 @@
+.wp-block-separator {
+	border: none;
+	height: 1px;
+	background: var(--color-light-grey);
+}
+
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+	max-width: 20em;
+}
+
+.wp-block-separator.is-style-dots {
+	margin: 2rem *;
+	height: 14px;
+	/* stylelint-disable-next-line function-url-quotes */
+	background: url("data:image/svg+xml,%3Csvg width='98' height='14' fill='%23e5e8ed' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 14A7 7 0 107 0a7 7 0 000 14zM49 14a7 7 0 100-14 7 7 0 000 14zM91 14a7 7 0 100-14 7 7 0 000 14z' /%3E%3C/svg%3E") center no-repeat !important;
+}
+
+.wp-block-separator.is-style-dots::before {
+	content: "";
+	padding-left: 0;
+}
