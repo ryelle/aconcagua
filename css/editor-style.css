@@ -1,0 +1,27 @@
+/*!
+ * Aconcagua editor styles.
+ */
+
+/* Abstracts */
+@import "1-abstracts/abstracts.css";
+
+/* Elements */
+@import "3-elements/elements.css";
+
+/* Blocks */
+@import "4-blocks/latest-posts";
+@import "4-blocks/quote";
+@import "4-blocks/pullquote";
+@import "4-blocks/separator";
+
+/* Utilities */
+@import "6-utilities/utilities.css";
+
+/* Editor Overrides */
+@import "7-editor-overrides/editor-overrides.css";
+
+.editor-post-title__input {
+	font-family: "Bluu Next", serif;
+	font-size: 3rem;
+	line-height: 1.45;
+}
