@@ -29,6 +29,7 @@ function theme_support() {
 	add_theme_support( 'align-wide' );
 
 	add_theme_support( 'editor-styles' );
+	add_theme_support( 'wp-block-styles' );
 	add_editor_style();
 }
 add_action( 'after_setup_theme', __NAMESPACE__ . '\theme_support' );
@@ -134,7 +135,7 @@ add_action( 'after_setup_theme', __NAMESPACE__ . '\block_editor_settings' );
 function render_block_tweaks( $block_content, $block ) {
 	if ( 'core/latest-posts' === $block['blockName'] ) {
 		$replacements = array(
-			'/></div>' => '/></div><div class="wp-block-latest-posts__content">',
+			'"></div>' => '"></div><div class="wp-block-latest-posts__content">',
 			'<li><a' => '<li><div class="wp-block-latest-posts__content"><a',
 			'</li>' => '</div></li>',
 		);

@@ -18,6 +18,7 @@
 }
 
 :root {
+	--color-white: #fff;
 	--color-light-grey: #e5e8ed;
 	--color-grey: #73859b;
 	--color-black: #2c3642;

@@ -1,0 +1,48 @@
+{
+	"global": {
+		"presets": {
+			"color": [
+				{
+					"slug": "black",
+					"value": "#2c3642"
+				},
+				{
+					"slug": "grey",
+					"value": "#73859b"
+				},
+				{
+					"slug": "light-grey",
+					"value": "#e5e8ed"
+				}
+			],
+			"font-size": [
+				{
+					"slug": "small",
+					"value": 18
+				},
+				{
+					"slug": "normal",
+					"value": 22
+				},
+				{
+					"slug": "medium",
+					"value": 28
+				},
+				{
+					"slug": "large",
+					"value": 38
+				},
+				{
+					"slug": "huge",
+					"value": 52
+				}
+			],
+			"gradient": []
+		},
+		"features": {
+			"typography": {
+				"dropCap": false
+			}
+		}
+	}
+}
